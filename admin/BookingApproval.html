@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AAA e_Ticketing & Booking</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/images.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+    
+	<a href="index.html" class="w3-bar-item w3-button w3-wide"><i class="fa fa-server" aria-hidden="true"></i>MENU</a>
+
+    <div class="w3-right w3-hide-small">
+		<a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-sign-out" aria-hidden="true"></i>SIGN OUT</a>
+	</div>
+
+  </div>
+</div>
+<br/>
+<div class="container">
+            <header>
+				<h1>Booking Approval</h1>
+            </header>
+				<table style="width:100%" border="2">
+				  <tr>
+					<th>No.</th>
+					<th>Customer</th> 
+					<th>From</th> 
+					<th>To</th> 
+					<th>Date</th>
+					<th>Pax</th>
+					<th>Duration</th>
+					<th>Request</th>
+					<th>Approval</th>
+				  </tr>
+				  <tr>
+					<td>1</td>
+					<td>Aman bin Amin</td> 
+					<td>Dungun</td>
+					<td>Kuala Terengganu</td>
+					<td>03.12.2017</td>
+					<td>15</td>
+					<td>4D 3N</td>
+					<td></td>
+					<td><button onclick="location.href='approvedTrip.php';" id="edit" value="EDIT">
+							<i class="fa fa-thumbs-up" aria-hidden="true"></i>APPROVED
+						</button>
+						<button onclick="location.href='delete.php';" id="delete" value="DELETE">
+							<i class="fa fa-ban" aria-hidden="true"></i>NOT APPROVED
+						</button>
+					</td>
+				  </tr>
+				  <tr>
+					<td>2</td>
+					<td>Asyraf bin Hamid</td> 
+					<td>Dungun</td>
+					<td>Kemaman</td>
+					<td>09.12.2017</td>
+					<td>8</td>
+					<td>7D 6N</td>
+					<td>TOUR GUIDE</td>
+					<td><button onclick="location.href='approvedTrip.php';" id="edit" value="EDIT">
+							<i class="fa fa-thumbs-up" aria-hidden="true"></i>APPROVED
+						</button>
+						<button onclick="location.href='delete.php';" id="delete" value="DELETE">
+							<i class="fa fa-ban" aria-hidden="true"></i>NOT APPROVED
+						</button>
+					</td>
+				  </tr>
+				</table>
+					
+</div>
+
+</body>
+</html>
